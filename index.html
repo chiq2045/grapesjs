@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>grapesjs</title>
+  </head>
+  <body>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/grapesjs/dist/css/grapes.min.css"
+    />
+    <script src="https://unpkg.com/grapesjs"></script>
+    <script src="https://unpkg.com/grapesjs-blocks-basic"></script>
+    <script src="https://unpkg.com/grapesjs-plugin-forms"></script>
+    <script src="https://unpkg.com/grapesjs-navbar"></script>
+    <script src="https://unpkg.com/grapesjs-style-filter"></script>
+    <script src="https://unpkg.com/grapesjs-style-gradient"></script>
+    <script src="https://unpkg.com/grapesjs-style-bg"></script>
+    <script src="https://unpkg.com/grapesjs-blocks-flexbox"></script>
+    <!-- <script src="https://unpkg.com/grapesjs-lory-slider"></script> -->
+    <script src="https://unpkg.com/grapesjs-tabs"></script>
+    <script src="https://unpkg.com/grapesjs-tooltip"></script>
+    <script src="https://unpkg.com/grapesjs-preset-webpage"></script>
+
+    <div id="gjs"></div>
+
+    <script type="text/javascript">
+      var editor = grapesjs.init({
+        fromElement: 1,
+        container: "#gjs",
+        plugins: [
+          "gjs-blocks-basic",
+          "grapesjs-plugin-forms",
+          "grapesjs-navbar",
+          "grapesjs-style-filter",
+          "grapesjs-style-gradient",
+          "grapesjs-style-bg",
+          "grapesjs-blocks-flexbox",
+          // "grapesjs-lory-slider",
+          "grapesjs-tabs",
+          "grapesjs-tooltip",
+          "grapesjs-preset-webpage",
+        ],
+        pluginsOpts: {
+          "gjs-blocks-basic": {
+            flexGrid: true,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
